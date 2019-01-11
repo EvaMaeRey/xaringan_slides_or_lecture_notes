@@ -1,0 +1,30 @@
+---
+title: "A topic"
+author: "Evangeline Reynolds"
+date: "1/10/2019"
+output: html_document
+---
+
+```{r, eval = length(objects())==0, echo = F}
+doc_type <- "doc"
+```
+---
+
+## topic 2 is so delightful
+
+All the good stuff that goes in both the lecture notes and the slides on topic 2.  
+
+- topic 2.a
+
+- topic 2.b
+
+---
+
+```{r, eval = doc_type == "doc", echo = F, results= "asis"}
+cat("For lecture notes.  Write some sentences. Give 'em some detail. Notes on topic 2.")
+```
+
+```{r, eval = doc_type == "pres", echo = F, results= "asis"}
+cat("---
+    Only for Presentation. Be brief. Notes on topic 2.")
+```

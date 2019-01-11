@@ -1,0 +1,33 @@
+---
+title: "Presentation Slides"
+subtitle: "⚔<br/>with xaringan"
+author: "Gina Reynolds"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    lib_dir: libs
+    css: ["kunoichi", "ninjutsu"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+---
+
+
+```{r declare type, echo = F}
+doc_type <- "pres"
+```
+
+
+# Topic 1
+
+```{r, child="topic_1.Rmd"}
+```
+
+---
+# Topic 2
+
+---
+
+```{r, child="topic_2.Rmd"}
+```
